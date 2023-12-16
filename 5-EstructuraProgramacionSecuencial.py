@@ -47,3 +47,4 @@ horaTrabajas = int(input("Ingrese la cantidad de horas trabajadas: "))
 valorHoras = int(input("Indique el valor de las horas :"))
 sueldo = horaTrabajas * valorHoras
 print("El sueldo mensual de un operario es", sueldo)
+#
