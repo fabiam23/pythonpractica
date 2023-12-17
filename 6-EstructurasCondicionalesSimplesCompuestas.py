@@ -10,3 +10,11 @@ if sueldo > 3000:
 #Condicional Compuesta
 #Realizar un programa que solicite ingresar dos numeros distintos y muestre el mayor de ellos
 
+num1 = int(input("Ingrese el primer valor: "))
+num2 = int(input("Ingrese el segundo valor: "))
+if num1 > num2:
+    print("Numero 1 es mayor")
+else:
+    print("Numero 2 es mayor")
+
+#Problemas propuestos
