@@ -18,3 +18,19 @@ else:
     print("Numero 2 es mayor")
 
 #Problemas propuestos
+#2-1 Realizar un programa que solicite la carga de 2 numeros, si el primero es mayor que el segundo
+#mostra la suma y la diferencia en caso contrario mostrar el producto y la division
+valor1 = int(input("Ingrese un valor: "))
+valor2 = int(input("Ingrese un valor: "))
+if valor1 > valor2:
+    suma = valor1 + valor2
+    resta = valor1 - valor2
+    print("La suma es:", suma)
+    print("La Resta es:", resta)
+else:
+    producto = valor2 * valor1
+    cociente = valor2 / valor1
+    print("El producto es:", producto)
+    print("El cociente es:", cociente)
+
+#2-2 Se ingresan 3 notas de un alumno, si el promedio es >= 7 mostra promocionado
