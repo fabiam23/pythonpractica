@@ -34,3 +34,16 @@ else:
     print("El cociente es:", cociente)
 
 #2-2 Se ingresan 3 notas de un alumno, si el promedio es >= 7 mostra promocionado
+nota1 = int(input("Ingrese la primera nota: "))
+nota2 = int(input("Ingrese la segunda nota: "))
+nota3 = int(input("Ingrese la tercera nota: "))
+
+promedio = (nota1 + nota2 + nota3) / 3
+print("El promedio es:", promedio)
+
+#Se ingresa por teclado un numero positivo de 1 o 2 digitos, indicar cuantos digitos tiene
+digito = int(input("Ingrese un valor de 1 o 2 digitos: "))
+if digito < 10:
+    print("Tiene un digito", digito)
+else:
+    print("Tiene 2 digitos", digito)
