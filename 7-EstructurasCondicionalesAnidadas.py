@@ -58,3 +58,23 @@ else:
             else:
                   print("Error")
 
+#7-4 Test de capacitacion. Mostrar porcierto de un total de preguntas vs respuestas correctas
+#maximo >= 90
+#medio >= 75
+#regular >= 50
+#fuera de nivel < 50
+
+cantidadPreguntas = int(input("Cantidad de preguntas realizadas: "))
+cantidadCorrectas = int(input("Cantidad de preguntas acertadas: "))
+
+porciertoPreguntas = (cantidadCorrectas / cantidadPreguntas) * 100
+if porciertoPreguntas >= 90:
+      print("Maximo:",porciertoPreguntas)
+else:
+      if porciertoPreguntas >= 75:
+            print("Medio:", porciertoPreguntas)
+      else:
+            if porciertoPreguntas >= 50:
+                  print("Regular:", porciertoPreguntas)
+            else:
+                  print("Fuera de nivel:", porciertoPreguntas)
