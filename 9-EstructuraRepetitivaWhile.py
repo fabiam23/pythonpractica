@@ -26,3 +26,7 @@ print("La suma es:",suma)
 promedio = suma / 10
 print("El promedio es:", promedio)
 
+# Una planta fabrica perfiles de hierro y posee n # de piezas
+# Confeccionar un programa que pida ingresar n # de piezas y luego
+# ingrese la longitud, sabiendo que la longitud del perfil esta entre
+# 1.20 y 1.30. imprimir la cantidad de piezas aptas
