@@ -30,3 +30,15 @@ print("El promedio es:", promedio)
 # Confeccionar un programa que pida ingresar n # de piezas y luego
 # ingrese la longitud, sabiendo que la longitud del perfil esta entre
 # 1.20 y 1.30. imprimir la cantidad de piezas aptas
+
+piezas = int(input("Ingrese la cantidad de piezas: "))
+p = 0
+piezasAptas = 0
+
+while p < piezas:
+    tamanoPieza = float(input("Ingrese el tamano de la pieza: "))
+
+    if tamanoPieza >= 1.2 and tamanoPieza <= 1.3:
+        piezasAptas = piezasAptas + 1
+    p = p + 1
+print("Cantidad de piezas buenas",piezas, "de",piezas,"piezas")
