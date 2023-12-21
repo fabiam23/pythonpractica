@@ -113,7 +113,7 @@ while contador <= 25:
     print(11 * contador)
     contador = contador + 1
 
-"""
+
 # 9-5 Mostrar los multiplos de 8 hasta el valor 500. Debe aparecer en pantalla
 # 8-16-24, etc
 contador2 = 1
@@ -124,3 +124,50 @@ while multiplo < 500:
     multiplo = 8 * contador2
     contador2 = contador2 + 1
    
+# 9-6 Realizar un programa que permita cargar 2 listas de 15 valores cada una.
+# Informar cual de las 2 listas tiene un valor mayor acumulado
+    
+lista1 = 0
+lista2 = 0
+
+contador3 = 0
+contador4 = 0
+
+while contador3 < 15:
+    valor = int(input("Agregue un valor(Lista1): "))
+    lista1 = lista1 + valor
+
+    contador3 = contador3 + 1
+
+    
+while contador4 < 15:
+    valor1 = int(input("Agregue un valor(Lista2): "))
+    lista2 = lista2 + valor1
+
+    contador4 = contador4 + 1
+
+if lista1 >  lista2:
+    print("Lista 1 es mayor")
+else:
+    print("Lista 2 es mayor")
+
+"""
+
+# 9-7 Desarrollar un programa que permita cargar n numeros enteros y luego informe
+# cuantos valores fueron pares y cuantos impares
+    
+x = 0
+n = int(input("Cuantos valores deseas cargar: "))
+par = 0
+impar = 0
+
+while x < n:
+    valor = int(input("Ingrese un valor: "))
+    if valor % 2 == 0:
+        par = par + 1
+    else:
+        impar = impar + 1
+    x = x + 1
+
+print("Par:", par)
+print("Impar:", impar)
