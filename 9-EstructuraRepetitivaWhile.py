@@ -1,3 +1,4 @@
+"""
 #Imprimir los numeros del 1 al 100
 x = 2
 while x <= 100:
@@ -105,4 +106,21 @@ print("Total en sueldo:", totalsueldo)
 print("Sueldo entre 100 y 300:", sueldo100_300)
 print("Sueldo mayor 300", sueldoMayor)
 
-# 9-4
+# 9-4 Realizar un programa que imprimi 25 terminos de la serie 11-22 etc, no se ingresan valores
+contador = 1
+
+while contador <= 25:
+    print(11 * contador)
+    contador = contador + 1
+
+"""
+# 9-5 Mostrar los multiplos de 8 hasta el valor 500. Debe aparecer en pantalla
+# 8-16-24, etc
+contador2 = 1
+multiplo = 0
+
+while multiplo < 500:
+    print(multiplo)
+    multiplo = 8 * contador2
+    contador2 = contador2 + 1
+   
