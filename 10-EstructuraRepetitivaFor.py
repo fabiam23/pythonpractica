@@ -123,11 +123,94 @@ for p in range(1,11):
 # A) Que tipo de triangulo es(Equilatero, isoceles, escaleno)
 # B) Cantidad de triangulos por tipo
     
-"""
+
 equilatero = 0
 isoceles = 0
 escaleno = 0
 
 triangulos = int(input("Cuantos triangulos desea calcular: "))
 for x in range(triangulos):
-    pass
+    lado1 = int(input("Ingrese el primer lado: "))
+    lado2 = int(input("Ingrese el segundo lado: "))
+    lado3 = int(input("Ingrese el tercer lado: "))
+
+    if lado1 ==  lado2 and lado2 == lado3:
+        equilatero = equilatero + 1
+    else:
+        if lado1 == lado2 or lado2 == lado3:
+            isoceles = isoceles + 1
+        else:
+            escaleno = escaleno + 1
+
+print("Equilatero:", equilatero)
+print("Isoceles:", isoceles)
+print("Escaleno:", escaleno)
+
+
+# 10-6 Escribir un programa que pida coordenadas en x,y   representarlos en el pano cartesiano
+# informar cuantos puntos se ingresaron en cada eje cartesiano.
+# empieza pidiendo cuantos puntos graficar
+
+cuadrante1 = 0
+cuadrante2 = 0
+cuadrante3 = 0
+cuadrante4 = 0
+
+cantidadPuntos = int(input("Cuantos puntos desea graficar: "))
+
+for x in range(cantidadPuntos):
+    x = int(input("Ingrese el punto x: "))
+    y = int(input("Ingrese el punto y: "))
+
+    if x < 0 and y > 0:
+        cuadrante1 = cuadrante1 + 1
+    else:
+        if x > 0 and y > 0:
+            cuadrante2 = cuadrante2 + 1
+        else:
+            if x < 0 and y < 0:
+                cuadrante3 = cuadrante3 + 1
+            else:
+                cuadrante4 = cuadrante4 + 1
+
+print("Cuadrante1:",cuadrante1)
+print("Cuadrante2:",cuadrante2)
+print("Cuadrante3:",cuadrante3)
+print("Cuadrante4:",cuadrante4)
+
+
+# 10-7 Se realiza la carga de 10 valores
+# a) Cantidad de valores negativos ingresados
+# b) cantidad de valores positivos ingresados
+# c) cantidad de multiplos de 15
+# d) el valor acumulado de los numeros ingresados que son pares.
+
+
+negativos = 0
+potitivos = 0
+multiplos15 = 0
+pares = 0
+for x in range(1,11):
+    numero = int(input("Ingrese el valor: "))
+
+    if numero < 0:
+        negativos = negativos + 1
+    else:
+        if numero > 0:
+            potitivos = potitivos + 1
+        else:
+            print("Neutro")
+    
+    if numero % 15 == 0:
+        multiplos15 = multiplos15 + 1
+    if numero % 2 == 0 and numero > 0:
+        pares = pares + numero
+
+print("Negativos:", negativos)
+print("Positivos:", potitivos)
+print("Multiplos15:", multiplos15)
+print("Pares:", pares)
+
+"""
+
+# 10-8 
