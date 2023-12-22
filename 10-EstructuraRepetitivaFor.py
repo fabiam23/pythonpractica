@@ -70,6 +70,64 @@ for rango in range(hasta):
 
 print("Cantidad de valores mayor a 1000:", mayor1000)
 
-"""
+
 
 # Problemas propuestos
+
+# 10-1 Confeccionar un programa que lea n pares de datos, cada par de datos corresponde a la medida
+# de la base y la altura de un triangulo, el programa debe informa.
+# A) la medida de cada triangulo, base, altura, superficie
+# B) la cantidad de triangulos cuya superficie es mayor 12
+
+
+triangulos = int(input("Ingrese la cantidad de triangulos a desarrollar: "))
+superficieMayor12 = 0
+
+for x in range(triangulos):
+    base = int(input("Ingrese la base: "))
+    altura = int(input("Ingrese la altura: "))
+    superficie = base * altura
+    print("La superficie es:",superficie)
+
+    if superficie > 12:
+        superficieMayor12 = superficieMayor12 + 1
+
+print("Los triangulos con superficie mayor de 12:",superficieMayor12)
+
+
+# 10-2 Desarrollar un programa que solicite la carga de 10 sumeros
+# Imprimir la suma de los ultimos 5 valores
+sumaUltimos5 = 0
+for p in range(10):
+    valor = int(input("Ingrese un valor: "))
+
+    if p >= 5:
+        sumaUltimos5 = sumaUltimos5 + valor
+
+print("la suma de los ultimos 5 numeros es:", sumaUltimos5)
+
+
+# 10-3 Desarrollar un programa que muestre la tabla del 5
+
+for x in range(1,11):
+    print("5 x",x, "=", 5 * x)
+
+# 10-4 Desarrollar un programa que permita la carga del 1 al 10 y nos muestre la tabla de multiplicar
+# del mismo (primero 12 numeros)
+
+numero = int(input("Ingrese la tabla a multiplicar: "))
+for p in range(1,11):
+    print(numero,"x",p, "=", numero * p)
+
+# 10-5 Desarrollar un programa que lea los lados de n triangulo e informar:
+# A) Que tipo de triangulo es(Equilatero, isoceles, escaleno)
+# B) Cantidad de triangulos por tipo
+    
+"""
+equilatero = 0
+isoceles = 0
+escaleno = 0
+
+triangulos = int(input("Cuantos triangulos desea calcular: "))
+for x in range(triangulos):
+    pass
