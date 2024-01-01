@@ -1,4 +1,4 @@
-"""
+
 # 1 Estructura repetitiva for
 
 for x in range(101):
@@ -211,7 +211,7 @@ print("Positivos:", potitivos)
 print("Multiplos15:", multiplos15)
 print("Pares:", pares)
 
-"""
+
 
 # 10-8 manana, tarde y noche. Se cuenta con la informacion de las edades de los estudiantes de los turnos mencionados
 # Ingresar las edades en cada turno
