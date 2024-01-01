@@ -222,9 +222,6 @@ turnoManana = 0
 turnoTarde = 0
 turnoNoche = 0
 
-promedioManana = turnoManana / 5
-promedioTarde = turnoTarde / 6
-promedioNoche = turnoNoche / 11
 
 for x in range(1,6):
     edad = int(input("Ingresa tu edad(turno manana): "))
@@ -233,9 +230,29 @@ for x in range(1,6):
     
     
 for x in range(1,7):
-    pass
+    edad = int(input("Ingresa tu edad(turno tarde): "))
+    
+    turnoTarde = turnoTarde + edad
 
 for x in range(1,12):
-    pass
+    edad = int(input("Ingresa tu edad(turno noche): "))
+    
+    turnoNoche= turnoNoche + edad
 
-print("Promedio ")
+promedioManana = turnoManana / 5
+promedioTarde = turnoTarde / 6
+promedioNoche = turnoNoche / 11
+
+print("Promedio manana:",promedioManana)
+print("Promedio tarde:",promedioTarde)
+print("Promedio noche:",promedioNoche)
+
+if promedioManana > promedioTarde and promedioManana > promedioNoche:
+    print("Promedio manana es mayor")
+else:
+    if promedioTarde > promedioNoche:
+        print("Promedio tarde es mayor")
+    else:
+        print("Promedio noche es mayor")
+
+
