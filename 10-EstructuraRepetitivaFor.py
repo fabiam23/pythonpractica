@@ -213,4 +213,29 @@ print("Pares:", pares)
 
 """
 
-# 10-8
+# 10-8 manana, tarde y noche. Se cuenta con la informacion de las edades de los estudiantes de los turnos mencionados
+# Ingresar las edades en cada turno
+# Obtener el promedio de las edades en cada turno e imprimirlos
+# Mostrar cual de los 3 turnos tiene en promedio la mayor edad
+ 
+turnoManana = 0
+turnoTarde = 0
+turnoNoche = 0
+
+promedioManana = turnoManana / 5
+promedioTarde = turnoTarde / 6
+promedioNoche = turnoNoche / 11
+
+for x in range(1,6):
+    edad = int(input("Ingresa tu edad(turno manana): "))
+    
+    turnoManana = turnoManana + edad
+    
+    
+for x in range(1,7):
+    pass
+
+for x in range(1,12):
+    pass
+
+print("Promedio ")
