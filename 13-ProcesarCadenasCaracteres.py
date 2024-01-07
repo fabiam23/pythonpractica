@@ -45,3 +45,16 @@ for x in range(len(correo)):
 # upper() devuelve cadenas en mayusculas
 # lower() devuelve cadenas en minisculas
 # capitaliza() devuelve la primera letra en mayuscula
+
+# Problema 4
+# Inicializar un string con la Cadena mAriA, llamar los metodos upper, lower, capitalize
+# guardarlos en otro string y mostrarlo en pantalla
+
+nombre = "mAriA"
+print(nombre)
+nombre1 = nombre.upper()
+print(nombre1)
+nombre2 = nombre.lower()
+print(nombre2)
+nombre3 = nombre.capitalize()
+print(nombre3)
