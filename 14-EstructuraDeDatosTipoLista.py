@@ -37,3 +37,33 @@ alumno = ['pepito', 8, 7]
 print(alumno[0])
 suma = (alumno[1] + alumno[2]) / 2
 print(suma)
+
+# PROBLEMAS PROPUESTOS
+
+# Problema1
+# Definir un una lista por asignacion de 8 elementos. contar cuantos pasan de 800
+numeros = [100, 400, 600, 1000, 900, 950,901,10]
+p = 0
+for i in range(len(numeros)):
+    if numeros[i] > 800:
+        p = p +1
+print('La Cantidad de numeros mayor de 800',p)
+
+
+# Problema 2
+# Definir una lista con 5 enteros. Mostrar por pantalla los elementos >= 7
+mayor7 = [5, 7, 8, 6, 9]
+for u in range(len(mayor7)):
+    if mayor7[u] >= 7:
+        print(mayor7[u])
+        
+# Problema 3
+# Definir una lista que almacene por asignacion 5 nombres de personas.
+# Contar cuantos de esos nombres tienen 5 o mas caracteres
+nombres = ['fabiam', 'noe', 'daniel', 'brig', 'brianna']
+cantidades = 0
+for h in range(len(nombres)):
+    if len(nombres[h]) >= 5:
+        cantidades = cantidades + 1
+print("Total de nombres con 5 o mas caracteres:",cantidades)
+    
