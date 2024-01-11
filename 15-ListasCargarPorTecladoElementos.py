@@ -59,10 +59,12 @@ alturas = []
 
 suma = 0
 for x in range(5):
-    valor = float(input('Igrese su altur: '))
+    valor = float(input('Ingrese su altura: '))
     alturas.append(valor)
     
     suma = suma + valor
     
 promedio = suma / 5
-print(promedio)
+print('Altura promedio:',promedio)
+
+# Problema 3
