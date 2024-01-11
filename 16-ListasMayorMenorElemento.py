@@ -37,7 +37,7 @@ for x in range(1, 5):
 
 print('El menor valor es:', menor,'y su posicion es:',posicion)
 
-"""
+
 
 # PROBLEMAS PROPUESTOS
 
@@ -59,3 +59,31 @@ for p in range(1, 5):
 
 print(lista_Nombres)
 print(menor_nombre)
+
+"""
+# Problema 2
+# Cargar una lista con 5 elementos enteros. Imprimir el mayor y un mensaje si se repite dentro de la lista
+# Decir si dicho valor se encuentra en dos o mas posiciones
+
+lista = []
+
+for x in range(5):
+    valor = int(input('Ingrese un valor: '))
+    lista.append(valor)
+
+
+mayor = lista[0]
+repite = 0
+
+for p in range(1,5):
+    if lista[p] > mayor:
+        mayor = lista[p]
+
+
+print('el mayor de la lista es:',mayor)
+
+for x in range(5):
+    if lista[x]  ==  mayor:
+        repite = repite + 1
+if repite > 1:
+    print('y se repite:',repite)
