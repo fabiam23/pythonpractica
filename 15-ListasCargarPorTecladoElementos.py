@@ -49,7 +49,6 @@ for x in range(len(sueldos)):
 promedio = suma / 5
 print(promedio)
      
-"""
 
 # Problema 2
 # Cargar por teclado y almacenaren una lista 5 alturas de personas
@@ -67,4 +66,23 @@ for x in range(5):
 promedio = suma / 5
 print('Altura promedio:',promedio)
 
+"""
 # Problema 3
+# Una empresa tiene dos turnos (manana, tarde) en lo que trabajan 8 empleados, 4 y 4.
+# Confeccionar un programa que permita almacenar los sueldos de los empleadoa agrupados en dos listas
+# Imprimir las 2 listas de sueldos.
+
+sueldos1 = []
+sueldos2 = []
+
+for x in range(4):
+    valor1 = float(input("Ingrese su sueldo: "))
+    sueldos1.append(valor1)
+
+
+for x in range(4):
+    valor2 = float(input("Ingrese su sueldo: "))
+    sueldos2.append(valor2)
+
+print(sueldos1)
+print(sueldos2)
