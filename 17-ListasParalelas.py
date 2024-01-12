@@ -43,7 +43,7 @@ for x in range(1,5):
         total =  total + 1
         print(productos[x])
 
-"""
+
 
 # Problema 2
 # En un curso de 4 alumnos se registraron las notas de sus examentes y se deben procesar de acuerdo a los sigte:
@@ -62,3 +62,41 @@ for x in range(4):
     alumnos.append(alumno)
     notas.append(nota)
 
+muy_bueno = 0
+for x in range(4):
+    print(alumnos[x])
+    print(notas[x])
+    if notas[x] >= 8:
+        print("Muy Bueno")
+        muy_bueno = muy_bueno + 1
+    else:
+        if notas[x] >= 4:
+            print("Bueno")
+        else:
+            print("Insuficiente")
+
+print("Alumnos con notas muy bueno:", muy_bueno)
+
+"""
+
+# Problema 3
+# Realizar un programa que pida la carga de 2 listas con 4 elementos.
+# Generar una tercera lista que surja de la suma de los elementos de la misma posicion de cada lista
+# Mostrar la tercer lista
+
+lista1 = []
+lista2 = []
+lista3 = []
+
+for x in range(4):
+    valor_lista1 = int(input("Ingrese el valor(lista1): "))
+    valor_lista2 = int(input("Ingrese el valor(lista2): "))
+
+    lista1.append(valor_lista1)
+    lista2.append(valor_lista2)
+
+    lista3.append(lista1[x] + lista2[x])
+
+print(lista1)
+print(lista2)
+print(lista3)
