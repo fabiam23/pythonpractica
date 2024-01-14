@@ -31,18 +31,3 @@ print(lista)
 """
 # Problema 1
 # 
-lista = []
-
-for x in range(5):
-    v = int(input('valor: '))
-    lista.append(v)
-print(lista)
-
-for x in range(4):
-    for p in range(4 - x):
-        if lista[p] > lista[p + 1]:
-            aux = lista[p]
-            lista[p] = lista[p + 1]
-            lista[p + 1] = aux
-            
-print(lista)
