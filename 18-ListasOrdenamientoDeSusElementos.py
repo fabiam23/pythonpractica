@@ -84,3 +84,28 @@ print(sueldos)
 # Luego ordenar de mayor a menor e imprimirla
 
 lista = []
+
+for x in range(5):
+    valor = int(input('Ingrese el valor: '))
+    lista.append(valor)
+    
+print(lista)
+
+
+for x in range(len(lista)- 1):
+    for i in range(len(lista)-1 -x):
+        if lista[i] > lista[i + 1]:
+            aux = lista[i]
+            lista[i] = lista[i + 1]
+            lista[i + 1] = aux
+            
+print(lista)
+
+for x in range(len(lista)- 1):
+    for i in range(len(lista)-1 -x):
+        if lista[i] < lista[i + 1]:
+            aux = lista[i]
+            lista[i] = lista[i + 1]
+            lista[i + 1] = aux
+            
+print(lista)
