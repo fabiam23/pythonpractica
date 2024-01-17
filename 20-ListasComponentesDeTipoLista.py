@@ -52,10 +52,60 @@ for x in range(len(lista)):
         for t in range(len(lista[x])):
                 sumando = sumando + lista[x][t]
         print(sumando)
-"""
+
 
 # Problema 3
 # Crear una lista por asignacion. La lista tiene que tener 5 elementos.
 # Cada elemento debe ser una lista, la primera lista tiene que tener
 # un elemento, la segunda 2, y la tercera 3 asi sucesivamente.
 # Sumar todos los valores de las listas
+
+
+lista = [[1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5]]
+
+suma = 0
+for x in range(len(lista)): 
+    
+    for p in range(len(lista[x])):
+        suma = suma + lista[x][p]
+print(suma)
+
+
+# PROBLEMAS PROPUESTOS
+# Problema 1 
+# Se tiene la siguiente lista
+lista = [[100,7,85,8], [4,8,56,25], [67,89,23,1], [78,56]]
+# Imprimir la lista. Luego fijar el valor cero todos los elementos mayores a 50 
+# del primer elemento de lista
+# Volver a imprimir la lista
+
+print(lista) 
+for x in range(len(lista[0])):
+    if lista[0][x] > 50:
+        lista[0][x] = 0
+print('*************')
+print(lista)
+
+
+# Se tiene la siguiente lista
+lista = [[4,12,5,66], [14,6,25], [3,4,5,67,23,1], [78,56]]
+# Imprimir la lista. Luego fijar el valor 0 a todos los elementos mayores a 10
+# en todos los elementos de la variable lista
+# Volver a imprimir la lista
+
+print(lista)
+
+for x in range(len(lista)):
+    for e in range(len(lista[x])):
+        if lista[x][e] > 10:
+            lista[x][e] = 10
+print('----------------')
+print(lista)
+
+"""
+# Problema 3
+# Crea una lista por asignacion con la cantidad de elementos de tipo lista que desees
+# Luego imprime el ultimo elemento de la lista principal
+
+lista = [[1,2,3], [2,3,6], [5,8,6]]
+print(lista[0][-1])
