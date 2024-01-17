@@ -8,7 +8,7 @@
 # dos notas, almacenar las notas en una lista paralela.
 # Cada componente de la lista paralela debe ser una lista con las dos notas.
 # Imprimir luego cada nombre y sus dos notas.
-
+"""
 alumnos = []
 notas = []
 
@@ -22,3 +22,22 @@ for n in range(3):
         
 for x in range(len(alumnos)):
     print(alumnos[x], notas[x][0], notas[x][1])
+"""
+# Problema 2
+# Se tiene que cargar la siguiente informacion:
+# Nombre de 3 empleados
+# Ingresos en concepto de sueldo, cobrado por cada empleado en los ultimos 3 meses
+# Confeccionar el programa para
+
+# a) Realizar la carga de los nombres de empleados y los 3 sueldos por cada empleado
+# b) Generar una lista que contenga el ingreso acumulado en sueldos en los ultimos 3 meses cada uno
+# c) Mostrar por pantalla el total pagado en sueldos a cada empleado en los ultimos 3 meses
+# d) Obtener el nombre del empleado que tuvo el mayor ingreso acumulado
+
+# Deberia queda asi:
+# nombres = ['juan', 'ana', 'luis']
+# sueldos = [[500,510,500], [700,650,600], [250,250,250,]]
+# totalSueldos = [1510, 1850, 750]
+
+empleados = []
+sueldos = []
