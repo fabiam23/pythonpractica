@@ -85,3 +85,9 @@ tamanoSubLista = int(input('Cantidad de elementos de la sublista: '))
 
 lista = []
 
+for x in range(tamanoLista):
+    lista.append([])
+    for c in range(tamanoSubLista):
+        valor = int(input('valor: '))
+        lista[x].append(valor)
+print(lista)
