@@ -68,7 +68,7 @@ def lado():
 
 lado()
 
-"""
+
 
 # PROBLEMAS PROPUESTOS
 
@@ -92,3 +92,41 @@ def vocales(cadena):
 
 
 texto()
+
+"""
+
+# Confeccionar una funcion que reciba tres enteros y los muestre ordenados de mayor a menos
+# En otra funcion solicitar la carga de 3 enteros y proceder a llamar a la primera funcion
+
+def mayorMenor(a,b,c):
+    if a > b and a > c:
+        if b > c:
+            print(a, b ,c)
+        else:
+            print(a,c,b)
+    else:
+        if b > c and b > a:
+            if c > a:
+                print(b ,c, a)
+            else:
+                print(b,a,c)
+
+        else:
+            if c > a and c > b:
+                if a > b:
+                    print(c,a,b)
+                else:
+                    print(c,b,a)
+
+
+#mayorMenor(50,80,600)
+
+def llamar():
+    v1 = int(input("Agregue primer valor: "))
+    v2 = int(input("Agregue segundo valor: "))
+    v3 = int(input("Agregue tercer valor: "))
+
+    print(mayorMenor(v1,v2,v3))
+    
+
+llamar()
